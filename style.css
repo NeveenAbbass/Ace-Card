@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+@font-face {
+  font-family: 'rye';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/rye/v15/r05XGLJT86YzH57tbOo.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+#first{
+  font-family: 'rye', serif;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#last{
+  font-family: 'rye', serif;
+  position: relative;
+  position: relative;
+  left: 250px;
+  top: 130px;
+  font-size: 40px;
+
+}
+
+div.container{
+  width: 300px;
+  height: 400px;
+  border: solid red 5px;
+  border-radius: 20px;
+}
+
+
+
+#triangle-up {
+  position: relative;
+  left: 20px;
+  top: 125px;
+  width: 0;
+  z-index: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid black;
+}
+
+#heart {
+  position: relative;
+  width: 30px;
+  height: 10px;
+  z-index: 1;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: black;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-225deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(225deg);
+  transform-origin: 100% 100%;
+}
+
+#shape{
+  position: relative;
+  left: 90px;
+  bottom: 50px;
+}
